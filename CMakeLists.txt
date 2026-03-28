@@ -39,7 +39,7 @@ add_subdirectory(src)
 
 install(PROGRAMS io.github.robinpie.localquens.desktop DESTINATION ${KDE_INSTALL_APPDIR})
 install(FILES io.github.robinpie.localquens.metainfo.xml DESTINATION ${KDE_INSTALL_METAINFODIR})
-install(FILES io.github.robinpie.localquens.svg DESTINATION ${KDE_INSTALL_FULL_ICONDIR}/hicolor/scalable/apps)
+install(FILES io.github.robinpie.localquens.svg DESTINATION ${KDE_INSTALL_ICONDIR}/hicolor/scalable/apps)
 
 ki18n_install(po)
 
