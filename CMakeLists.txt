@@ -1,9 +1,10 @@
 # SPDX-FileCopyrightText: 2022 Felipe Kinoshita <kinofhek@gmail.com>
+# SPDX-FileCopyrightText: 2026 robinpie <robin413@protonmail.com>
 # SPDX-License-Identifier: BSD-2-Clause
 
 cmake_minimum_required(VERSION 3.16)
 
-project(eloquens VERSION 0.1)
+project(localquens VERSION 0.1)
 
 include(FeatureSummary)
 
@@ -27,8 +28,8 @@ include(ECMPoQmTools)
 include(ECMQmlModule)
 
 ecm_setup_version(${PROJECT_VERSION}
-    VARIABLE_PREFIX ELOQUENS
-    VERSION_HEADER "${CMAKE_CURRENT_BINARY_DIR}/src/version-eloquens.h"
+    VARIABLE_PREFIX LOCALQUENS
+    VERSION_HEADER "${CMAKE_CURRENT_BINARY_DIR}/src/version-localquens.h"
 )
 
 find_package(Qt6 ${QT_MIN_VERSION} REQUIRED COMPONENTS Core Gui Qml QuickControls2 Svg Widgets)
@@ -36,9 +37,9 @@ find_package(KF6 ${KF_MIN_VERSION} REQUIRED COMPONENTS Kirigami CoreAddons Confi
 
 add_subdirectory(src)
 
-install(PROGRAMS org.kde.eloquens.desktop DESTINATION ${KDE_INSTALL_APPDIR})
-install(FILES org.kde.eloquens.metainfo.xml DESTINATION ${KDE_INSTALL_METAINFODIR})
-install(FILES org.kde.eloquens.svg DESTINATION ${KDE_INSTALL_FULL_ICONDIR}/hicolor/scalable/apps)
+install(PROGRAMS io.github.robinpie.localquens.desktop DESTINATION ${KDE_INSTALL_APPDIR})
+install(FILES io.github.robinpie.localquens.metainfo.xml DESTINATION ${KDE_INSTALL_METAINFODIR})
+install(FILES io.github.robinpie.localquens.svg DESTINATION ${KDE_INSTALL_FULL_ICONDIR}/hicolor/scalable/apps)
 
 ki18n_install(po)
 

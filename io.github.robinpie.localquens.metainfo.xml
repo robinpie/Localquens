@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component type="desktop-application">
+  <!--
+  SPDX-FileCopyrightText: 2022 Felipe Kinoshita <kinofhek@gmail.com>
+  SPDX-FileCopyrightText: 2026 robinpie <robin413@protonmail.com>
+  SPDX-License-Identifier: CC0-1.0
+  -->
+  <id>io.github.robinpie.localquens</id>
+  <name>Localquens</name>
+  <summary>Generate the lorem ipsum text</summary>
+  <summary xml:lang="ar">ولد نص لوريم إيبسوم</summary>
+  <summary xml:lang="ca">Genera el text «lorem ipsum»</summary>
+  <summary xml:lang="ca-valencia">Genera el text «lorem ipsum»</summary>
+  <summary xml:lang="de">Generieren Sie den „lorem ipsum"-Text</summary>
+  <summary xml:lang="en-GB">Generate the lorem ipsum text</summary>
+  <summary xml:lang="eo">Generi la lorem ipsum tekston</summary>
+  <summary xml:lang="es">Generar el texto lorem ipsum</summary>
+  <summary xml:lang="eu">Sortu «lorem ipsum» testua</summary>
+  <summary xml:lang="fi">Tuota lorem ipsum -tekstiä</summary>
+  <summary xml:lang="fr">Générer le texte « lorem ipsum »</summary>
+  <summary xml:lang="gl">Xerar un texto lorem ipsum</summary>
+  <summary xml:lang="he">יצירת טקסט לורם איפסום</summary>
+  <summary xml:lang="hi">लोरेम इप्सम टेक्स्ट जनरेट करें</summary>
+  <summary xml:lang="ia">Genera le texto lorem ipsum </summary>
+  <summary xml:lang="is">Útbúa lorem ipsum texta</summary>
+  <summary xml:lang="it">Genera il testo lorem ipsum</summary>
+  <summary xml:lang="ka">Lorem Ipsum-ის ტექსტის გენერაცია</summary>
+  <summary xml:lang="ko">자리 비움 문자열 생성</summary>
+  <summary xml:lang="lt">Generuoti lorem ipsum tekstą</summary>
+  <summary xml:lang="lv">„Lorem ipsum" jeb bezjēdzīga teksta ģenerators</summary>
+  <summary xml:lang="nl">De tekst lorem ipsum genereren</summary>
+  <summary xml:lang="nn">Generer eksempelteksten «lorem ipsum»</summary>
+  <summary xml:lang="pl">Stwórz tekst lorem ipsum</summary>
+  <summary xml:lang="pt">Gera o texto de exemplo 'lorem ipsum'</summary>
+  <summary xml:lang="pt-BR">Gera o texto lorem ipsum</summary>
+  <summary xml:lang="sa">lorem ipsum पाठं जनयन्तु</summary>
+  <summary xml:lang="sk">Generovať lorem ipsum text</summary>
+  <summary xml:lang="sl">Generiraj besedilo lorem ipsum</summary>
+  <summary xml:lang="sv">Generera lorem ipsum text</summary>
+  <summary xml:lang="tr">Lorem Ipsum Metni Üreteci</summary>
+  <summary xml:lang="uk">Створення тексту-замінника Lorem Ipsum</summary>
+  <summary xml:lang="zh-CN">生成杂乱无章的文本</summary>
+  <summary xml:lang="zh-TW">產生 lorem ipsum 亂數假文</summary>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0-or-later</project_license>
+  <developer_name>robinpie (fork of Eloquens by Felipe Kinoshita)</developer_name>
+  <description>
+    <p>Localquens allows you to easily generate the lorem ipsum text, you can add links, unordered/ordered list, headings and much more. All text is generated locally with no network access required.</p>
+  </description>
+  <requires>
+    <display_length compare="ge">360</display_length>
+  </requires>
+  <recommends>
+    <control>keyboard</control>
+    <control>pointing</control>
+    <control>touch</control>
+  </recommends>
+  <provides>
+    <binary>localquens</binary>
+  </provides>
+</component>

@@ -1,28 +1,9 @@
 <!--
     SPDX-FileCopyrightText: 2022 Felipe Kinoshita <kinofhek@gmail.com>
+    SPDX-FileCopyrightText: 2026 robinpie <robin413@protonmail.com>
     SPDX-License-Identifier: CC0-1.0
 -->
 
-# Eloquens
+# Localquens
 
-Generate the lorem ipsum text
-
-![eloquens window](https://cdn.kde.org/screenshots/eloquens/eloquens.png)
-
-## Build Flatpak
-
-To build a flatpak bundle of Eloquens use the following instructions:
-
-```bash
-$ git clone https://invent.kde.org/sdk/eloquens.git
-$ cd eloquens
-$ flatpak-builder --repo=repo build-dir --force-clean org.kde.eloquens.json
-$ flatpak build-bundle repo eloquens.flatpak org.kde.eloquens
-```
-
-Now you can either double-click the `eloquens.flatpak` file to open it with
-some app store (discover, gnome-software, etc...) or run:
-
-```bash
-$ flatpak install eloquens.flatpak
-```
+is a fork of KDE Eloquens that runs entirely on your local machine. It is a lorem ipsum generator. The upstream version relied the now-defunct loripsum.net API. Based off what the upstream code seems to expect and some googling, I took a crack at reconstructing it and bundling it with this fork.

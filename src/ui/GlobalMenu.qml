@@ -1,11 +1,12 @@
 // SPDX-FileCopyrightText: 2022 Felipe Kinoshita <kinofhek@gmail.com>
+// SPDX-FileCopyrightText: 2026 robinpie <robin413@protonmail.com>
 // SPDX-License-Identifier: GPL-3.0-or-later
 
 import QtQuick 2.15
 import Qt.labs.platform 1.1 as Labs
 import org.kde.kirigami 2.19 as Kirigami
 
-import org.kde.eloquens
+import io.github.robinpie.localquens
 
 Labs.MenuBar {
     id: menuBar

@@ -1,10 +1,10 @@
 {
-    "id": "org.kde.eloquens",
+    "id": "io.github.robinpie.localquens",
     "branch": "master",
     "runtime": "org.kde.Platform",
     "runtime-version": "6.8",
     "sdk": "org.kde.Sdk",
-    "command": "eloquens",
+    "command": "localquens",
     "tags": [
         "nightly"
     ],
@@ -18,7 +18,7 @@
     ],
     "modules": [
         {
-            "name": "eloquens",
+            "name": "localquens",
             "buildsystem": "cmake-ninja",
             "sources": [
                 {

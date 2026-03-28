@@ -1,4 +1,5 @@
 // SPDX-FileCopyrightText: 2022 Felipe Kinoshita <kinofhek@gmail.com>
+// SPDX-FileCopyrightText: 2026 robinpie <robin413@protonmail.com>
 // SPDX-License-Identifier: GPL-3.0-or-later
 
 import QtQuick
@@ -6,7 +7,7 @@ import QtQuick.Controls as QQC2
 import QtQuick.Layouts
 import org.kde.kirigami as Kirigami
 
-import org.kde.eloquens
+import io.github.robinpie.localquens
 
 RowLayout {
     id: pageHeader

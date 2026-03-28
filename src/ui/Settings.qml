@@ -1,4 +1,5 @@
 // SPDX-FileCopyrightText: 2022 Felipe Kinoshita <kinofhek@gmail.com>
+// SPDX-FileCopyrightText: 2026 robinpie <robin413@protonmail.com>
 // SPDX-License-Identifier: GPL-3.0-or-later
 
 import QtQuick
@@ -6,7 +7,7 @@ import QtQuick.Controls as QQC2
 import QtQuick.Layouts
 import org.kde.kirigami as Kirigami
 
-import org.kde.eloquens
+import io.github.robinpie.localquens
 
 Kirigami.Page {
     id: settingsPage
@@ -49,7 +50,7 @@ Kirigami.Page {
                         return 2;
                     }
                 }
-                onCurrentIndexChanged: {
+                onActivated: {
                     if (currentIndex == 0) {
                         Config.paragraphLength = "small"
                     } else if (currentIndex == 1) {
@@ -67,7 +68,7 @@ Kirigami.Page {
         QQC2.CheckBox {
             text: i18n("Show Bold and Italic text")
             checked: Config.boldAndItalic
-            onCheckedChanged: {
+            onClicked: {
                 Config.boldAndItalic = checked
                 Config.save()
                 Controller.fetch()
@@ -77,7 +78,7 @@ Kirigami.Page {
         QQC2.CheckBox {
             text: i18n("Show Links")
             checked: Config.links
-            onCheckedChanged: {
+            onClicked: {
                 Config.links = checked
                 Config.save()
                 Controller.fetch()
@@ -87,7 +88,7 @@ Kirigami.Page {
         QQC2.CheckBox {
             text: i18n("Show Code blocks")
             checked: Config.code
-            onCheckedChanged: {
+            onClicked: {
                 Config.code = checked
                 Config.save()
                 Controller.fetch()
@@ -97,7 +98,7 @@ Kirigami.Page {
         QQC2.CheckBox {
             text: i18n("Show Unordered Lists")
             checked: Config.unorderedLists
-            onCheckedChanged: {
+            onClicked: {
                 Config.unorderedLists = checked
                 Config.save()
                 Controller.fetch()
@@ -107,7 +108,7 @@ Kirigami.Page {
         QQC2.CheckBox {
             text: i18n("Show Ordered Lists")
             checked: Config.orderedLists
-            onCheckedChanged: {
+            onClicked: {
                 Config.orderedLists = checked
                 Config.save()
             }
@@ -116,7 +117,7 @@ Kirigami.Page {
         QQC2.CheckBox {
             text: i18n("Show Description Lists")
             checked: Config.descriptionLists
-            onCheckedChanged: {
+            onClicked: {
                 Config.descriptionLists = checked
                 Config.save()
                 Controller.fetch()
@@ -126,7 +127,7 @@ Kirigami.Page {
         QQC2.CheckBox {
             text: i18n("Show Blockquotes")
             checked: Config.blockquotes
-            onCheckedChanged: {
+            onClicked: {
                 Config.blockquotes = checked
                 Config.save()
                 Controller.fetch()
@@ -136,7 +137,7 @@ Kirigami.Page {
         QQC2.CheckBox {
             text: i18n("Show headings")
             checked: Config.headings
-            onCheckedChanged: {
+            onClicked: {
                 Config.headings = checked
                 Config.save()
                 Controller.fetch()
@@ -146,7 +147,7 @@ Kirigami.Page {
         QQC2.CheckBox {
             text: i18n("All Caps")
             checked: Config.allCaps
-            onCheckedChanged: {
+            onClicked: {
                 Config.allCaps = checked
                 Config.save()
                 Controller.fetch()

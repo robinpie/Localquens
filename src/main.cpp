@@ -1,4 +1,5 @@
 // SPDX-FileCopyrightText: 2022 Felipe Kinoshita <kinofhek@gmail.com>
+// SPDX-FileCopyrightText: 2026 robinpie <robin413@protonmail.com>
 // SPDX-License-Identifier: LGPL-2.1-or-later
 
 #include <QApplication>
@@ -8,7 +9,7 @@
 #include <QQuickWindow>
 #include <QQmlContext>
 
-#include "version-eloquens.h"
+#include "version-localquens.h"
 #include <KAboutData>
 #include <KLocalizedContext>
 #include <KLocalizedString>
@@ -18,27 +19,27 @@
 Q_DECL_EXPORT int main(int argc, char *argv[])
 {
     QApplication app(argc, argv);
-    QCoreApplication::setOrganizationName(QStringLiteral("KDE"));
+    QCoreApplication::setOrganizationName(QStringLiteral("robinpie"));
 
-    KLocalizedString::setApplicationDomain("eloquens");
+    KLocalizedString::setApplicationDomain("localquens");
 
     KAboutData aboutData(
                          // The program name used internally.
-                         QStringLiteral("eloquens"),
+                         QStringLiteral("localquens"),
                          // A displayable program name string.
-                         i18nc("@title", "Eloquens"),
+                         i18nc("@title", "Localquens"),
                          // The program version string.
-                         QStringLiteral(ELOQUENS_VERSION_STRING),
+                         QStringLiteral(LOCALQUENS_VERSION_STRING),
                          // Short description of what the app does.
                          i18n("Generate lorem ipsum text"),
                          // The license this code is released under.
                          KAboutLicense::GPL,
                          // Copyright Statement.
-                         i18n("© 2022"));
-    aboutData.addAuthor(i18nc("@info:credit", "Felipe Kinoshita"), i18nc("@info:credit", "Author"), QStringLiteral("kinofhek@gmail.com"), QStringLiteral("https://fhek.gitlab.io"));
-    aboutData.setBugAddress("https://bugs.kde.org/buglist.cgi?component=General&amp;product=Eloquens");
+                         i18n("© 2022–2026"));
+    aboutData.addAuthor(i18nc("@info:credit", "Felipe Kinoshita"), i18nc("@info:credit", "Original author"), QStringLiteral("kinofhek@gmail.com"), QStringLiteral("https://fhek.gitlab.io"));
+    aboutData.addAuthor(i18nc("@info:credit", "robinpie"), i18nc("@info:credit", "Fork maintainer"), QStringLiteral("robin413@protonmail.com"), QStringLiteral(""));
     KAboutData::setApplicationData(aboutData);
-    QGuiApplication::setWindowIcon(QIcon::fromTheme(QStringLiteral("org.kde.eloquens")));
+    QGuiApplication::setWindowIcon(QIcon::fromTheme(QStringLiteral("io.github.robinpie.localquens")));
 
     QQmlApplicationEngine engine;
 
@@ -49,7 +50,7 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     aboutData.processCommandLine(&parser);
 
     engine.rootContext()->setContextObject(new KLocalizedContext(&engine));
-    engine.loadFromModule(QStringLiteral("org.kde.eloquens"), QStringLiteral("Main"));
+    engine.loadFromModule(QStringLiteral("io.github.robinpie.localquens"), QStringLiteral("Main"));
 
     if (engine.rootObjects().isEmpty()) {
         return -1;

@@ -1,4 +1,5 @@
 // SPDX-FileCopyrightText: 2022 Felipe Kinoshita <kinofhek@gmail.com>
+// SPDX-FileCopyrightText: 2026 robinpie <robin413@protonmail.com>
 // SPDX-License-Identifier: GPL-3.0-or-later
 
 import QtQuick
@@ -7,12 +8,12 @@ import QtQuick.Layouts
 import org.kde.kirigami as Kirigami
 import org.kde.config as KConfig
 
-import org.kde.eloquens
+import io.github.robinpie.localquens
 
 Kirigami.ApplicationWindow {
     id: root
 
-    title: i18n("Eloquens")
+    title: i18n("Localquens")
 
     width: Kirigami.Units.gridUnit * 35
     height: Kirigami.Units.gridUnit * 28
