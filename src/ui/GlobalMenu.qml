@@ -46,13 +46,7 @@ Labs.MenuBar {
         title: i18nc("@menu", "Help")
 
         Labs.MenuItem {
-            text: i18nc("@menu-action", "Report Bug…")
-            icon.name: "tools-report-bug"
-            onTriggered: Qt.openUrlExternally(AboutType.aboutData.bugAddress);
-        }
-
-        Labs.MenuItem {
-            text: i18nc("@menu-action", "About Eloquens")
+            text: i18nc("@menu-action", "About Localquens")
             icon.name: "help-about"
             onTriggered: pageStack.layers.push("About.qml")
             enabled: pageStack.layers.depth <= 1

@@ -36,8 +36,10 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
                          KAboutLicense::GPL,
                          // Copyright Statement.
                          i18n("© 2022–2026"));
-    aboutData.addAuthor(i18nc("@info:credit", "Felipe Kinoshita"), i18nc("@info:credit", "Original author"), QStringLiteral("kinofhek@gmail.com"), QStringLiteral("https://fhek.gitlab.io"));
     aboutData.addAuthor(i18nc("@info:credit", "robinpie"), i18nc("@info:credit", "Fork maintainer"), QStringLiteral("robin413@protonmail.com"), QStringLiteral(""));
+    aboutData.addAuthor(i18nc("@info:credit", "Felipe Kinoshita"), i18nc("@info:credit", "Original author"), QStringLiteral("kinofhek@gmail.com"), QStringLiteral("https://fhek.gitlab.io"));
+    aboutData.setBugAddress("");
+    aboutData.setDesktopFileName(QStringLiteral("io.github.robinpie.localquens"));
     KAboutData::setApplicationData(aboutData);
     QGuiApplication::setWindowIcon(QIcon::fromTheme(QStringLiteral("io.github.robinpie.localquens")));
 

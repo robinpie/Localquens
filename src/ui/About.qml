@@ -9,4 +9,6 @@ import org.kde.coreaddons as KCoreAddons
 
 Kirigami.AboutPage {
     aboutData: KCoreAddons.AboutData
+    getInvolvedUrl: ""
+    donateUrl: ""
 }
